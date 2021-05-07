@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한조의 자기소개</title>
+    <link rel="stylesheet" href="./text.css">
+</head>
+
+<body>
+    <div id="map" style="width:500px;height:400px;"></div>
+    <div>
+        <ul class="myList">
+            <li><a>배한조</a></li>
+            <li><a>학과 : 컴퓨터 공학과</a></li>
+            <li><a>나이 : 24살</a></li>
+            <li><a>취미 : 공으로 하는 스포츠 전반, 자취요리</a></li>
+            <li>
+                <ol>좋아하는 음식</ol>
+                <ol>초밥</ol>
+                <ol>치킨</ol>
+                <ol>피자</ol>
+            </li>
+            <li><a>혼자 공부하다가 다 함께 공부하니까 더 재밌었어요!</a></li>
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=myappkey">
+    </script>
+    <script>
+        var container = document.getElementById('map');
+        var options = {
+            center: new kakao.maps.LatLng(37.22519881515621, 127.18524401243869),
+            level: 3
+        };
+
+        var map = new kakao.maps.Map(container, options);
+    </script>
+</body>
+
+</html>

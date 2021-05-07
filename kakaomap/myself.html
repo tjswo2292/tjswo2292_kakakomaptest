@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선재의 자기소개</title>
+    <link rel="stylesheet" href="./text.css">
+</head>
+
+<body>
+    <div id="map" style="width:500px;height:400px;"></div>
+    <div>
+        <ul class="myList">
+            <li><a>최선재</a></li>
+            <li><a>학과 : 컴퓨터 공학과</a></li>
+            <li><a>나이 : 26살</a></li>
+            <li><a>취미 : 운동</a></li>
+            <li>
+                <ol>좋아하는 음식</ol>
+                <ol>닭가슴살</ol>
+                <ol>치킨</ol>
+                <ol>피자</ol>
+            </li>
+            <li><a>재미있는 코딩</a></li>
+        </ul>
+    </div>
+
+    <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=myappkey">
+    </script>
+    <script>
+        var container = document.getElementById('map');
+        var options = {
+            center: new kakao.maps.LatLng(37.308030520417745, 126.82771535897992),
+            level: 3
+        };
+
+        var map = new kakao.maps.Map(container, options);
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+.wrap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(./asd.jpg);
+}
+.title {
+    font-size: 100px;
+    color: orange;
+    margin-top: 20px;
+}
+.myself {
+    margin-top: 100px;
+    text-align: center;
+}
+.myself>a {
+    font-size: 50px;
+}
+.myself>a:hover {
+    color: blue;
+}
+.myself p {
+    font-size: 30px;
+}
